@@ -1,0 +1,31 @@
+### GET USERs 
+GET http://localhost:9696/users
+
+### GET USER 
+GET http://localhost:9696/users/cock
+
+### ADD A USER 
+POST http://localhost:9696/users 
+Content-Type: application/json
+
+{
+    "name": "jeje", 
+    "status": "admin"
+}
+
+### UPDATE STATUS OF A USER 
+PATCH http://localhost:9696/users 
+Content-Type: application/json
+
+{
+    "name": "ujang",
+    "newStatus": "user"
+}
+
+###DELETE A USER 
+DELETE http://localhost:9696/users 
+Content-Type: application/json
+
+{
+    "name": "wakwaw"
+}
